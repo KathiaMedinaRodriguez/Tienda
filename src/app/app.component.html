@@ -1,1 +1,18 @@
-<app-product-list></app-product-list>
+<div class="imc-calculator">
+  <h2>Calculadora de IMC</h2>
+  <form (ngSubmit)="calculateIMC()">
+    <div class="form-group">
+      <label for="Peso">Peso (kg):</label>
+      <input type="number" id="Peso" [(ngModel)]="Peso" name="Peso" required>
+    </div>
+    <div class="form-group">
+      <label for="Altura">Altura (cm):</label>
+      <input type="number" id="Altura" [(ngModel)]="Altura" name="Altura" required>
+    </div>
+    <button type="submit">Calcular IMC</button>
+  </form>
+  <div *ngIf="imc !== null" class="result">
+    <h3>Your IMC: {{ imc | number:'1.2-2' }}</h3>
+    <p>{{ message }}</p>
+  </div>
+</div>

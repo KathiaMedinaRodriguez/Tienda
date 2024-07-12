@@ -1,0 +1,63 @@
+/* src/app/bmi-calculator/bmi-calculator.component.css */
+
+.imc-calculator {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.imc-calculator h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.imc-calculator .form-group {
+  margin-bottom: 15px;
+}
+
+.imc-calculator label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+}
+
+.imc-calculator input[type="number"] {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.imc-calculator button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bmi-calculator button:hover {
+  background-color: #0056b3;
+}
+
+.bmi-calculator .result {
+  margin-top: 20px;
+}
+
+.bmi-calculator .result h3 {
+  color: #007bff;
+}
+
+.bmi-calculator .result p {
+  color: #555;
+}
